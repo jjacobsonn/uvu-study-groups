@@ -1,14 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
+import styles from './app.module.css'
 
-import NxWelcome from './nx-welcome';
+import NxWelcome from './nx-welcome'
 
 export function App() {
   return (
     <div>
       <NxWelcome title="uvu-study-group" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -880,7 +880,7 @@ export function NxWelcome({ title }: { title: string }) {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default NxWelcome;
+export default NxWelcome

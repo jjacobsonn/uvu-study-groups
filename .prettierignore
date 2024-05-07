@@ -1,4 +1,12 @@
 # Add files here to ignore them from prettier formatting
+
+# For testing purposes
+node_modules/
+dist/
+coverage/
+tmp/
+
+# Original code
 /dist
 /coverage
 /.nx/cache
