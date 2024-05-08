@@ -19,18 +19,25 @@
               }
             ]
           }
-        ]
+        ],
+        "no-unused-vars": "error",
+        "semi": ["error", "always"]
       }
     },
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nx/typescript", "prettier"],
-      "rules": {}
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "error"
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nx/javascript", "prettier"],
-      "rules": {}
+      "rules": {
+        "no-unused-vars": "error",
+        "semi": ["error", "always"]
+      }
     }
   ]
 }
