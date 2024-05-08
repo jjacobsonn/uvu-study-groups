@@ -19,6 +19,8 @@
             ]
           }
         ],
+        "no-unused-vars": "error",
+        "semi": ["error", "always"],
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
         "react-hooks/rules-of-hooks": "error",
@@ -29,12 +31,18 @@
       "files": ["*.ts", "*.tsx"],
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint"],
-      "extends": ["prettier"]
+      "extends": ["prettier"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "error"
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nx/javascript", "prettier"],
-      "rules": {}
+      "rules": {
+        "no-unused-vars": "error",
+        "semi": ["error", "always"]
+      }
     }
   ]
 }
