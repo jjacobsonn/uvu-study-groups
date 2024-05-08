@@ -1,5 +1,5 @@
 {
-  "extends": ["plugin:@nx/react", "../../.eslintrc.json"],
+  "extends": ["plugin:@nx/react", "../../.eslintrc.json", "prettier"],
   "ignorePatterns": ["!**/*"],
   "plugins": ["@typescript-eslint", "react", "react-hooks"],
   "overrides": [
@@ -29,11 +29,11 @@
       "files": ["*.ts", "*.tsx"],
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint"],
-      "rules": {}
+      "extends": ["prettier"]
     },
     {
       "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nx/javascript"],
+      "extends": ["plugin:@nx/javascript", "prettier"],
       "rules": {}
     }
   ]
