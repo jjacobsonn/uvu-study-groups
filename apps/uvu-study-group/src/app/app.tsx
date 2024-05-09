@@ -1,13 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css'
-
+import React from 'react'
+import ThemeProvider from './theme-provider'
 import NxWelcome from './nx-welcome'
 
-export function App() {
+const App = () => {
   return (
-    <div>
-      <NxWelcome title="uvu-study-group" />
-    </div>
+    <ThemeProvider>
+      <NxWelcome />
+    </ThemeProvider>
   )
 }
 
